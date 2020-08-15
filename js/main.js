@@ -9,3 +9,17 @@ function calculateGrossSalary(){
     document.querySelector('#grossSalary').value = grossSalary.toFixed(2)
 
 }
+
+function calculateGratification(){
+
+    if (document.querySelector('#workedHours').value > 160){
+
+        document.querySelector('#gratification').value = 15 * grossSalary.value / 100
+        valueGratification = 15 * grossSalary.value / 100 
+
+    } else {
+
+        document.querySelector('#gratification').value = "0"
+    
+    }
+}
