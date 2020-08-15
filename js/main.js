@@ -53,3 +53,17 @@ function calculateIrrf(){
 
     }
 }
+
+function calculateNetSalary(){
+    
+    if (document.querySelector('#workedHours').value > 160) {
+
+        document.querySelector('#netSalary').value = (valueGrossSalary + valueGratification - valueIrrf).toFixed(2)
+    
+    } else {
+        
+        document.querySelector('#netSalary').value = (valueGrossSalary - valueIrrf).toFixed(2)
+
+    }
+
+}
