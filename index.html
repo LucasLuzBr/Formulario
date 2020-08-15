@@ -10,7 +10,7 @@
 <body>
 
     <div class="container" id='container'>
-        
+
         <div id = "msg-erro" class = "alert alert-danger msg">
             <label>Preencha os campos corretamente!</label>
           </div> 
@@ -18,6 +18,33 @@
           <div id = "msg-sucesso" class = "alert alert-success msg">
             <label>Cálculo realizado com sucesso!</label>
           </div> 
+
+          <div class="container rounded shadow-lg p-3 mb-5 bg-white rounded w-50 p-3" id='divCampos'>
+
+            <h4>Cálculo do Salário do Funcionario</h4>
+
+            <label>Nome</label>
+            <input class="form-control" type="text" placeholder="Nome" id="name"><br>
+
+            <label>Valor Hora</label>
+            <input class="form-control" type="text" placeholder="Valor Hora" id="hourValue"><br>
+
+            <label>Horas Trabalhadas</label>
+            <input class="form-control" type="text" placeholder="Horas Trabalhadas" id="workedHours"><br>
+
+            <label>Gratificação</label>
+            <input class="form-control" type="text" placeholder="Gratificação" id="gratification" readonly><br>
+
+            <label>IRRF</label>
+            <input class="form-control" type="text" placeholder="IRRF" id="irrf" readonly><br>
+
+            <label>Salário Bruto</label>
+            <input class="form-control" type="text" placeholder="Salário Bruto" id="grossSalary" readonly><br>
+
+            <label>Salário Líquido</label>
+            <input class="form-control" type="text" placeholder="Salário Líquido" id="netSalary" readonly><br>
+
+          </div>
 
     </div>
 
