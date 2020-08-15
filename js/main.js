@@ -1,4 +1,19 @@
-function calulate(){
+function calculate(){
+
+    if (document.querySelector('#name').value == "" || document.querySelector('#hourValue') == "" || document.querySelector('#workedValue')){
+
+        $("#msg-erro").slideDown(400).delay(2000).slideUp(400)
+
+    } else {
+
+        calculateGrossSalary()
+        calculateGratification()
+        calculateIrrf()
+        calculateNetSalary()
+
+        $("#msg-sucesso").slideDown(400).delay(2000).slideUp(400)
+
+    }
 
 }
 
